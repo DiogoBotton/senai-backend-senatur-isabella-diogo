@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
+using Senai.Senatur.WebApi.Interfaces;
+using Senai.Senatur.WebApi.Repositories;
 using Senai.Senatur.WebApi.ViewModels;
 using System;
 using System.Collections.Generic;
