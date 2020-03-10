@@ -21,3 +21,5 @@ Pacotes:
 	-Valor //decimal
 	-Ativo //bool
 	-CidadeId //int
+
+Modelagem
