@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Senai.Senatur.WebApi.Domains;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,6 +19,7 @@ namespace Senai.Senatur.WebApi.Contexts
             if (!optionsBuilder.IsConfigured)
             {
                 optionsBuilder.UseSqlServer("Data Source=DEV1\\SQLEXPRESS; initial catalog=Senatur_Tarde; user Id=sa; pwd=sa@132;");
+                //optionsBuilder.UseSqlServer("Data Source=DEV16\\SQLEXPRESS; initial catalog=Senatur_Tarde; user Id=sa; pwd=sa@132;");
             }
         }
 
