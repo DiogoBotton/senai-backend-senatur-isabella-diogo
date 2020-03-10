@@ -1,0 +1,23 @@
+TiposUsuarios:
+	-Id, //int
+	-Titulo, //string
+
+Cidades:
+	-Id, //int
+	-Titulo //string
+
+Usuarios:
+	-Id, //int
+	-Email, //string
+	-Senha, //string
+	-TipoUsuarioId //int
+
+Pacotes:
+	-Id, //int
+	-NomePacote, //string
+	-Descricao, //string
+	-DataIda, //datetime
+	-DataVolta //datetime
+	-Valor //decimal
+	-Ativo //bool
+	-CidadeId //int
