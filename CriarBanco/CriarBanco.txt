@@ -1,0 +1,4 @@
+OBS: Banco de dados realizado por método Code First, por isso a não existencia de Scripts SQL;
+Passo a passo:
+-Antes de tudo, edite no arquivo SenaturContext.cs, na aba OnConfiguring, a connectionString do servidor local da sua maquina;
+-Para gera-lo no banco, exclua a pasta Migration, e refaça outra (com nome diferente da classe contexto) com o comando: add-migration [nome-migration] e após isso, subir para o banco com o comando update-database.
