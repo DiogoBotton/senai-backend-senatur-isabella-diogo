@@ -18,15 +18,15 @@ namespace Senai.Senatur.WebApi.Domains
         [Required(ErrorMessage = "Nome de pacote é obrigatório")]
         public string NomePacote { get; set; }
 
-        [Column(TypeName = "VARCHAR(255)")]
+        [Column(TypeName = "TEXT")]
         public string Descricao { get; set; }
 
-        [Column(TypeName = "DATETIME")]
-        [DataType(DataType.DateTime)]
+        [Column(TypeName = "DATE")]
+        [DataType(DataType.Date)]
         public DateTime DataIda { get; set; }
 
-        [Column(TypeName = "DATETIME")]
-        [DataType(DataType.DateTime)]
+        [Column(TypeName = "DATE")]
+        [DataType(DataType.Date)]
         public DateTime DataVolta { get; set; }
 
         [Column("Valor" , TypeName = "DECIMAL (18,2)")]
@@ -38,7 +38,7 @@ namespace Senai.Senatur.WebApi.Domains
 
         public int CidadeId { get; set; }
 
-        [ForeignKey("Id")]
+        [ForeignKey("CidadeId")]
         public Cidades Cidades { get; set; }
 
 

@@ -18,8 +18,8 @@ namespace Senai.Senatur.WebApi.Contexts
         {
             if (!optionsBuilder.IsConfigured)
             {
-                //optionsBuilder.UseSqlServer("Data Source=DEV1\\SQLEXPRESS; initial catalog=Senatur_Tarde; user Id=sa; pwd=sa@132;");
-                optionsBuilder.UseSqlServer("Data Source=DEV16\\SQLEXPRESS; initial catalog=Senatur_Tarde; user Id=sa; pwd=sa@132;");
+                optionsBuilder.UseSqlServer("Data Source=DEV1\\SQLEXPRESS; initial catalog=Senatur_Tarde; user Id=sa; pwd=sa@132;");
+                //optionsBuilder.UseSqlServer("Data Source=DEV16\\SQLEXPRESS; initial catalog=Senatur_Tarde; user Id=sa; pwd=sa@132;");
             }
         }
 
@@ -52,13 +52,15 @@ namespace Senai.Senatur.WebApi.Contexts
             {
                 Id = 1,
                 Email = "admin@admin.com",
-                Senha = "admin"
+                Senha = "admin",
+                TiposUsuariosId = 1
             },
             new Usuarios
             {
                 Id = 2,
                 Email = "cliente@cliente.com",
-                Senha = "cliente"
+                Senha = "cliente",
+                TiposUsuariosId = 2,
             }
             );
 
@@ -70,8 +72,8 @@ namespace Senai.Senatur.WebApi.Contexts
                 "Prova disso são as praias, os museus e as construções seculares que dão um charme mais que especial à região." +
                 "A cidade, sinônimo de alegria, também é conhecida pela efervescência cultural que a credenciou como um dos destinos " +
                 "mais procurados por turistas brasileiros e estrangeiros.O Pelourinho e o Elevador são alguns dos principais pontos de visitação.",
-                DataIda = Convert.ToDateTime("06-08-2020"),
-                DataVolta = Convert.ToDateTime("10-08-2020"),
+                DataIda = Convert.ToDateTime("06/08/2020"),
+                DataVolta = Convert.ToDateTime("10/08/2020"),
                 Valor = 854,
                 CidadeId = 1,
                 Ativo = true
@@ -87,8 +89,8 @@ namespace Senai.Senatur.WebApi.Contexts
                 "passeios de bicicleta, pontos turísticos históricos, interação com animais e até baladas" +
                 "estão entre as atrações da região. Destacam-se as praias de Guarajuba, Imbassaí," +
                 "Praia do Forte e Costa do Sauipe.",
-                DataIda = Convert.ToDateTime("14-05-2020"),
-                DataVolta = Convert.ToDateTime("18-08-2020"),
+                DataIda = Convert.ToDateTime("14/05/2020"),
+                DataVolta = Convert.ToDateTime("18/08/2020"),
                 Valor = 1826,
                 CidadeId = 1,
                 Ativo = true
@@ -103,8 +105,8 @@ namespace Senai.Senatur.WebApi.Contexts
                 "Os aventureiros costumam render-se facilmente a esse destino regado por trilhas" +
                 "ecológicas, passeios de bote e descidas de rapel pelas inúmeras quedas d'água da" +
                 "região.",
-                DataIda = Convert.ToDateTime("28-03-2020"),
-                DataVolta = Convert.ToDateTime("01-04-2020"),
+                DataIda = Convert.ToDateTime("28/03/2020"),
+                DataVolta = Convert.ToDateTime("01/04/2020"),
                 Valor = 1004,
                 CidadeId = 2,
                 Ativo = true
