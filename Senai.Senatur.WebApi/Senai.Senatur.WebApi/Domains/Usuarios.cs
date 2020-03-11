@@ -44,6 +44,11 @@ namespace Senai.Senatur.WebApi.Domains
         [ForeignKey("Id")]
         public TiposUsuarios TiposUsuarios { get; set; }
 
-
+        public void AlterarInformacoes(string email, string senha, int tiposUsuariosId)
+        {
+            Email = email;
+            Senha = senha;
+            TiposUsuariosId = tiposUsuariosId;
+        }
     }
 }

@@ -40,8 +40,22 @@ namespace Senai.Senatur.WebApi.Domains
 
         [ForeignKey("Id")]
         public Cidades Cidades { get; set; }
-        
 
 
+        public void AlterarParaInativo()
+        {
+            Ativo = false;
+        }
+
+        public void AlterarInformacoes(string nomePacote, string descricao, DateTime dataIda, DateTime dataVolta, decimal valor, bool ativo, int cidadeId)
+        {
+            NomePacote = nomePacote;
+            Descricao = descricao;
+            DataIda = dataIda;
+            DataVolta = dataVolta;
+            Valor = valor;
+            Ativo = ativo;
+            CidadeId = cidadeId;
+        }
     }
 }
