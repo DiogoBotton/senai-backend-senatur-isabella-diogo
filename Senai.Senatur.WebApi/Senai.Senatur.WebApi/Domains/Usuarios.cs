@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -44,6 +44,11 @@ namespace Senai.Senatur.WebApi.Domains
         [ForeignKey("Id")]
         public TiposUsuarios TiposUsuarios { get; set; }
 
-
+        public void AlterarInformacoes(string email, string senha, int tiposUsuariosId)
+        {
+            Email = email;
+            Senha = senha;
+            TiposUsuariosId = tiposUsuariosId;
+        }
     }
 }

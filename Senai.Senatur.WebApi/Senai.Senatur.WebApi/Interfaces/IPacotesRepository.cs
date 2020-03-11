@@ -13,5 +13,10 @@ namespace Senai.Senatur.WebApi.Interfaces
         void Cadastrar(Pacotes pacotes);
         void Atualizar(Pacotes pacotes);
         void Deletar(Pacotes pacotes);
+        List<Pacotes> Ativos();
+        List<Pacotes> Inativos();
+        List<Pacotes> PorCidade(int Id);
+        List<Pacotes> PorAsc();
+        List<Pacotes> PorDes();
     }
 }
